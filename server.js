@@ -1,5 +1,4 @@
 // const app = require("./backend/app");
-
 const debug = require("debug")("node-angular");
 const http = require("http");
 const path = require('path');
@@ -12,13 +11,15 @@ console.log('serving node, expressive');
 // app.use(express.static('./dist/mean-app'));
 app.use(express.static(__dirname + '/dist/mean-app'));
 
+// app.use(static(__dirname + '/dist'));
+
 
 app.get('/', function(req, res) {
-    // res.send('this be a test');
+    res.send('this be a test');
     console.log('in the app slash to get endpoint');
     //res.sendFile('index.html', { root: './dist/mean-app' });
     // res.sendSendFile('index.html', { root: './dist/mean-app' });
-    res.sendFile(path.join(__dirname + '/dist/index.html'));
+    // res.sendFile(path.join(__dirname + '/dist/index.html'));
 
 });
 
