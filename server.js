@@ -10,7 +10,7 @@ const app = express();
 console.log('serving node, expressive');
 
 // app.use(express.static('./dist/mean-app'));
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/mean-app'));
 
 
 app.get('/', function(req, res) {
