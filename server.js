@@ -31,7 +31,7 @@ app.get('/', function(req, res) {
     // res.send('this be a test');
     console.log('in the app slash to get endpoint');
     //res.sendFile('index.html', { root: './dist/mean-app' });
-    res.sendFile('/dist/mean-app/index.html');
+    // res.sendFile('/dist/mean-app/index.html');
 
 });
 
